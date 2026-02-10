@@ -1,6 +1,5 @@
-# The-Behavior-of-Uber-Customer-Database
+# Uber Trip Data Web App
 
 ### Demo website:
-https://joykuan.github.io/The-Behavior-of-Uber-Customer-Database/index_page.html
 https://joykuan.github.io/data-explorer/index_page.html
 
