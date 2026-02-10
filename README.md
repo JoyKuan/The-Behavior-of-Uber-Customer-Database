@@ -2,4 +2,5 @@
 
 ### Demo website:
 https://joykuan.github.io/The-Behavior-of-Uber-Customer-Database/index_page.html
+https://joykuan.github.io/data-explorer/index_page.html
 
