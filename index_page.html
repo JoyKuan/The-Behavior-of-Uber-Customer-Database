@@ -92,11 +92,11 @@
                 <tr>
                     <th> </th>
                     <!-- <th>sequence <i class="fas fa-caret-square-down" onclick=""></i><i class="fas fa-caret-square-up" onclick=""></i></th> -->
-                    <th>CATELOGY <i class="fas fa-caret-square-down" onclick="catalog_sort_down()"></i><i class="fas fa-caret-square-up" onclick="catalog_sort_up()"></i></th>
+                    <th>CATEGORY <i class="fas fa-caret-square-down" onclick="catalog_sort_down()"></i><i class="fas fa-caret-square-up" onclick="catalog_sort_up()"></i></th>
                     <th>END DATE <i class="fas fa-caret-square-down" onclick="enddate_sort_down()"></i><i class="fas fa-caret-square-up" onclick="enddate_sort_up()"></i></th>
                     <th>MILES <i class="fas fa-caret-square-down" onclick="mile_sort_down()"></i><i class="fas fa-caret-square-up" onclick="mile_sort_up()"></i></th>
                     <th>PURPOSE <i class="fas fa-caret-square-down"onclick="purpose_sort_down()"></i><i class="fas fa-caret-square-up" onclick="purpose_sort_up()"></i></th>
-                    <th>START <i class="fas fa-caret-square-down" onclick="start_sort_down()"></i><i class="fas fa-caret-square-up" onclick="start_sort_up()"></i></th>
+                    <th>START LOCATION<i class="fas fa-caret-square-down" onclick="start_sort_down()"></i><i class="fas fa-caret-square-up" onclick="start_sort_up()"></i></th>
                     <th>START DATE <i class="fas fa-caret-square-down" onclick="startdate_sort_down()"></i><i class="fas fa-caret-square-up" onclick="startdate_sort_up()"></i></th>
                     <th>END LOCATION <i class="fas fa-caret-square-down" onclick="destination_sort_down()"></i><i class="fas fa-caret-square-up" onclick="destination_sort_up()"></i></th>
                 </tr>
@@ -169,7 +169,7 @@
                                             tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                                             tr += "<td>"+djson[x]["MILES"]+"</td>";
                                             tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                                            tr += "<td>"+djson[x]["START"]+"</td>";
+                                            tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                                             tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                                             tr += "<td>"+djson[x]["STOP"]+"</td>";
                                             tr += "</tr>";
@@ -202,7 +202,7 @@
                                         tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                                         tr += "<td>"+djson[x]["MILES"]+"</td>";
                                         tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                                        tr += "<td>"+djson[x]["START"]+"</td>";
+                                        tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                                         tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                                         tr += "<td>"+djson[x]["STOP"]+"</td>";
                                         tr += "</tr>";
@@ -537,7 +537,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -565,7 +565,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -629,7 +629,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -663,7 +663,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -714,7 +714,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -750,7 +750,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -784,7 +784,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -820,7 +820,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -854,7 +854,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -886,7 +886,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -933,7 +933,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -963,7 +963,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STARTLOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -974,14 +974,14 @@
     } 
     //done
     function start_sort_up(){
-        var purpose_ = database.ref('/index/').orderByChild('START').limitToFirst(500);
+        var purpose_ = database.ref('/index/').orderByChild('START LOCATION').limitToFirst(500);
         var djson;
 
         purpose_.on('value', function(snapshot){
             djson_ = JSON.parse(JSON.stringify(snapshot.val()));
             djson = jsonToArray(djson_)
             console.log(djson)
-            djson = djson.sort(up_string("START"));
+            djson = djson.sort(up_string("START LOCATION"));
             console.log(djson);
             var tr = "";
             for(x in djson){
@@ -992,7 +992,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1003,14 +1003,14 @@
     } 
     //done
     function start_sort_down(){
-        var purpose_ = database.ref('/index/').orderByChild('START').limitToLast(500);
+        var purpose_ = database.ref('/index/').orderByChild('START LOCATION').limitToLast(500);
         var djson;
 
         purpose_.on('value', function(snapshot){
             djson_ = JSON.parse(JSON.stringify(snapshot.val()));
             djson = jsonToArray(djson_)
             console.log(djson)
-            djson = djson.sort(down_string("START"));
+            djson = djson.sort(down_string("START LOCATION"));
             console.log(djson);
             var tr = "";
             for(x in djson){
@@ -1021,7 +1021,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1051,7 +1051,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1080,7 +1080,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1094,7 +1094,7 @@
     function search_catalogy(){
         var srearchItem = document.getElementById("search_item_1").value;
         console.log(srearchItem)
-        var purpose_ = database.ref('/index').orderByChild('CATELOGY').equalTo(srearchItem);
+        var purpose_ = database.ref('/index').orderByChild('CATEGORY').equalTo(srearchItem);
         var djson;
 
         purpose_.on('value', function(snapshot){
@@ -1112,7 +1112,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1148,7 +1148,7 @@
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                     tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
@@ -1192,7 +1192,7 @@
                         tr += "<td>"+djson[x]["END_DATE"]+"</td>";
                         tr += "<td>"+djson[x]["MILES"]+"</td>";
                         tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                        tr += "<td>"+djson[x]["START"]+"</td>";
+                        tr += "<td>"+djson[x]["START_LOCATION"]+"</td>";
                         tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                         tr += "<td>"+djson[x]["STOP"]+"</td>";
                         tr += "</tr>";
