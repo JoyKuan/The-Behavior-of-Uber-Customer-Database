@@ -1,6 +1,6 @@
 # Uber Trip Data Web App
 
-### Data Source:
+### Data source:
 The data used in this project is the [My Uber Drives](https://www.kaggle.com/datasets/zusmani/uberdrives/data) dataset from Kaggle.
 
 ### Reference: 
