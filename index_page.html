@@ -24,7 +24,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
     <script src="https://kit.fontawesome.com/afa3fff295.js" crossorigin="anonymous"></script>
    
-    <sytle>
+    <style>
         body{padding: 40px; position:relative;}
         i{cursor: pointer;}
     </style>
@@ -165,13 +165,13 @@
                                         if(djson[x] != null){
                                             tr += "<tr>";
                                             tr += "<td>"+i+"</td>";
-                                            tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                                            tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                                             tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                                            tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                                            tr += "<td>"+djson[x]["START"]+"</td>";
+                                            tr += "<td>"+djson[x]["STOP"]+"</td>";
                                             tr += "<td>"+djson[x]["MILES"]+"</td>";
                                             tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                                            tr += "<td>"+djson[x]["START"]+"</td>";
-                                            tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                                            tr += "<td>"+djson[x]["STOP"]+"</td>";
                                             tr += "</tr>";
                                             i ++; 
                                         }    
@@ -533,13 +533,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -561,13 +561,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -625,13 +625,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++;
                 }    
@@ -659,13 +659,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++
                 }    
@@ -710,13 +710,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++
                 }    
@@ -746,13 +746,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++
                 }    
@@ -780,13 +780,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++
                 }    
@@ -816,13 +816,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i++
                 }    
@@ -850,13 +850,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i ++;
                 }    
@@ -882,13 +882,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i ++;
                 }    
@@ -929,13 +929,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -959,13 +959,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -988,13 +988,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -1017,13 +1017,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -1047,13 +1047,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -1076,13 +1076,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+x+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                 }    
             }
@@ -1108,13 +1108,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i ++; 
                 }    
@@ -1144,13 +1144,13 @@
                 if(djson[x] != null){
                     tr += "<tr>";
                     tr += "<td>"+i+"</td>";
-                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                     tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                    tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                    tr += "<td>"+djson[x]["START"]+"</td>";
+                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "<td>"+djson[x]["MILES"]+"</td>";
                     tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                    tr += "<td>"+djson[x]["START"]+"</td>";
-                    tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                    tr += "<td>"+djson[x]["STOP"]+"</td>";
                     tr += "</tr>";
                     i ++; 
                 }    
@@ -1188,13 +1188,13 @@
                     if(djson[x]["MILES"] >= small_ && djson[x]["MILES"] <= big_){
                         tr += "<tr>";
                         tr += "<td>"+i+"</td>";
-                        tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                        tr += "<td>"+djson[x]["START_DATE"]+"</td>";
                         tr += "<td>"+djson[x]["END_DATE"]+"</td>";
+                        tr += "<td>"+djson[x]["CATEGORY"]+"</td>";
+                        tr += "<td>"+djson[x]["START"]+"</td>";
+                        tr += "<td>"+djson[x]["STOP"]+"</td>";
                         tr += "<td>"+djson[x]["MILES"]+"</td>";
                         tr += "<td>"+djson[x]["PURPOSE"]+"</td>";
-                        tr += "<td>"+djson[x]["START"]+"</td>";
-                        tr += "<td>"+djson[x]["START_DATE"]+"</td>";
-                        tr += "<td>"+djson[x]["STOP"]+"</td>";
                         tr += "</tr>";
                         i ++;   
                     }  
