@@ -217,35 +217,41 @@
 
                         </script>
                     </th>
-                    <!-- catalogy -->
+                    <!-- 1 start date -->
                     <th>
-                        <div id="main" style="width: 80px;height:80px;"></div>
-                        <script type="text/javascript">
-                            var myChart = echarts.init(document.getElementById('main'));
-                            var option = {
-                                title: {},
-                                tooltip: {},
-                                legend: {
-                                    show: false 
-                                },
-                                xAxis: {
-                                    show: false 
-                                    // data: ["Business","Personal"]
-                                },
-                                yAxis: {    
+                            <div id="main" style="width: 120px;height:80px;"></div>
+                            <script type="text/javascript">
+                                var myChart5 = echarts.init(document.getElementById('main'));
+                                var option5 = {
+                                    title: {},
+                                    tooltip: {},
+                                    grid:{
+                                    x:0.1,
+                                    y:0.1,
+                                    x2:0.1,
+                                    y2:0.1
+                                    // borderWidth:1
+                                    },
+                                    legend: {
+                                    },
+                                    xAxis: {
+                                        data: ["Jaunary","February","March","April","May","June","July",
+                                                "August","September","October","November","December"]
+                                    },
+                                    yAxis: {    
                                         show: false 
                                     },
-                                series: [{
-                                    type: 'pie',
-                                    data: [{value:1078, name:'Business'},
-                                            {value:77, name:'Personal'}]
-                                    // color:['Lightblue']
-                                }]
-                            };
-                            myChart.setOption(option);
-                        </script>
+                                    series: [{
+                                        type: 'bar',
+                                        data: [61,115,113,54,49,108,112,133,36,106,122,146],
+                                        color:['#37A2DA']
+                                    }]
+                                };
+                                myChart5.setOption(option5);
+                            </script>
+
                     </th>
-                    <!--1 //End_date -->
+                     <!--2 //End_date -->
                     <th>
                             <div id="main1" style="width: 120px;height:60px;"></div>
                             <script type="text/javascript">
@@ -272,83 +278,39 @@
                                 myChart1.setOption(option1);
                             </script>
                         </th>
-                    <!--2 miles -->
+                    <!--3 catalogy -->
                     <th>
-                        <div id="main2" style="width: 150px;height:80px;"></div>
+                        <div id="main2" style="width: 80px;height:80px;"></div>
                         <script type="text/javascript">
-                            var myChart2 = echarts.init(document.getElementById('main2'));
-                            var option2 = {
+                            var myChart = echarts.init(document.getElementById('main2'));
+                            var option = {
                                 title: {},
                                 tooltip: {},
-                                // grid:{
-                                //     x:1,
-                                //     y:1,
-                                //     x2:1,
-                                //     y2:1
-                                //     // borderWidth:1
-                                //     },
                                 legend: {
                                     show: false 
                                 },
                                 xAxis: {
-                                    show: false
-                                    // data: ["[0-5)","[5-10)","[10-20)","[20-50)","[50- )"]
+                                    show: false 
+                                    // data: ["Business","Personal"]
                                 },
                                 yAxis: {    
-                                    show: false 
-                                },
+                                        show: false 
+                                    },
                                 series: [{
                                     type: 'pie',
-                                    data: [{value:496, name:'[0,5)'},
-                                            {value:341,name:'[5.10)'},
-                                            {value:234,name:'[10,20)'},
-                                            {value:57, name:'[20,50)'},
-                                            {value:27, name:'[50, )'}]
+                                    data: [{value:1078, name:'Business'},
+                                            {value:77, name:'Personal'}]
                                     // color:['Lightblue']
                                 }]
                             };
-                            myChart2.setOption(option2);
+                            myChart.setOption(option);
                         </script>
                     </th>
-                    <!--3 purpose -->
+                    <!-- 4 start -->
                     <th>
                             <div id="main3" style="width: 160px;height:80px;"></div>
                             <script type="text/javascript">
-                                var myChart3 = echarts.init(document.getElementById('main3'));
-                                var option3 = {
-                                    title: {},
-                                    tooltip: {},
-                                    grid:{
-                                    x:0.1,
-                                    y:0.1,
-                                    x2:0.1,
-                                    y2:0.1
-                                    // borderWidth:1
-                                    },
-                                    legend: {
-                                    },
-                                    xAxis: {
-                                        data: ["Other","Errand/Supplies","Meeting","Customer Visit",
-                                                "Temporary Site","Between Offices","Charity ($)","Commute",
-                                                "Moving","Airport/Travel"]
-                                    },
-                                    yAxis: {    
-                                        show: false 
-                                    },
-                                    series: [{
-                                        type: 'bar',
-                                        data: [160,502,128,187,101,50,18,1,1,4,3],
-                                         color:['#37A2DA']
-                                    }]
-                                };
-                                myChart3.setOption(option3);
-                            </script>
-                    </th>
-                    <!-- 4start -->
-                    <th>
-                            <div id="main4" style="width: 160px;height:80px;"></div>
-                            <script type="text/javascript">
-                                var myChart4 = echarts.init(document.getElementById('main4'));
+                                var myChart4 = echarts.init(document.getElementById('main3'));
                                 var option4 = {
                                     title: {},
                                     tooltip: {},
@@ -395,45 +357,11 @@
                                 myChart4.setOption(option4);
                             </script>
                     </th>
-                    <!-- 5 start date -->
+                    <!--5 end LOCATION -->
                     <th>
-                            <div id="main5" style="width: 120px;height:80px;"></div>
-                            <script type="text/javascript">
-                                var myChart5 = echarts.init(document.getElementById('main5'));
-                                var option5 = {
-                                    title: {},
-                                    tooltip: {},
-                                    grid:{
-                                    x:0.1,
-                                    y:0.1,
-                                    x2:0.1,
-                                    y2:0.1
-                                    // borderWidth:1
-                                    },
-                                    legend: {
-                                    },
-                                    xAxis: {
-                                        data: ["Jaunary","February","March","April","May","June","July",
-                                                "August","September","October","November","December"]
-                                    },
-                                    yAxis: {    
-                                        show: false 
-                                    },
-                                    series: [{
-                                        type: 'bar',
-                                        data: [61,115,113,54,49,108,112,133,36,106,122,146],
-                                        color:['#37A2DA']
-                                    }]
-                                };
-                                myChart5.setOption(option5);
-                            </script>
-
-                    </th>
-                    <!--6 end LOCATION -->
-                    <th>
-                        <div id="main6" style="width: 160px;height:80px;"></div>
+                        <div id="main4" style="width: 160px;height:80px;"></div>
                         <script type="text/javascript">
-                            var myChart6 = echarts.init(document.getElementById('main6'));
+                            var myChart6 = echarts.init(document.getElementById('main4'));
                             var option6 = {
                                 title: {},
                                 grid:{
@@ -499,6 +427,78 @@
                             };
                             myChart6.setOption(option6);
                         </script>             
+                    </th>
+                    <!--6 miles -->
+                    <th>
+                        <div id="main5" style="width: 150px;height:80px;"></div>
+                        <script type="text/javascript">
+                            var myChart2 = echarts.init(document.getElementById('main5'));
+                            var option2 = {
+                                title: {},
+                                tooltip: {},
+                                // grid:{
+                                //     x:1,
+                                //     y:1,
+                                //     x2:1,
+                                //     y2:1
+                                //     // borderWidth:1
+                                //     },
+                                legend: {
+                                    show: false 
+                                },
+                                xAxis: {
+                                    show: false
+                                    // data: ["[0-5)","[5-10)","[10-20)","[20-50)","[50- )"]
+                                },
+                                yAxis: {    
+                                    show: false 
+                                },
+                                series: [{
+                                    type: 'pie',
+                                    data: [{value:496, name:'[0,5)'},
+                                            {value:341,name:'[5.10)'},
+                                            {value:234,name:'[10,20)'},
+                                            {value:57, name:'[20,50)'},
+                                            {value:27, name:'[50, )'}]
+                                    // color:['Lightblue']
+                                }]
+                            };
+                            myChart2.setOption(option2);
+                        </script>
+                    </th>
+                    <!--7 purpose -->
+                    <th>
+                            <div id="main6" style="width: 160px;height:80px;"></div>
+                            <script type="text/javascript">
+                                var myChart3 = echarts.init(document.getElementById('main6'));
+                                var option3 = {
+                                    title: {},
+                                    tooltip: {},
+                                    grid:{
+                                    x:0.1,
+                                    y:0.1,
+                                    x2:0.1,
+                                    y2:0.1
+                                    // borderWidth:1
+                                    },
+                                    legend: {
+                                    },
+                                    xAxis: {
+                                        data: ["Other","Errand/Supplies","Meeting","Customer Visit",
+                                                "Temporary Site","Between Offices","Charity ($)","Commute",
+                                                "Moving","Airport/Travel"]
+                                    },
+                                    yAxis: {    
+                                        show: false 
+                                    },
+                                    series: [{
+                                        type: 'bar',
+                                        data: [160,502,128,187,101,50,18,1,1,4,3],
+                                         color:['#37A2DA']
+                                    }]
+                                };
+                                myChart3.setOption(option3);
+                            </script>
                     </th>
                 </tr>
             </thead>
